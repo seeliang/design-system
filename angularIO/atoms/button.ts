@@ -11,7 +11,8 @@ export class Button {
   @Input()
   action = {
     text:'',
-    type: ''
+    type: '',
+    html: ''
   }
 
   @Output()

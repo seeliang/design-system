@@ -17,7 +17,8 @@ export class AppComponent {
     },
     alt: {
       text: 'alt',
-      type: 'is-alt'
+      type: 'is-alt',
+      html: 'a'
     }
   }
 }
