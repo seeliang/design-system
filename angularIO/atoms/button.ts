@@ -3,21 +3,9 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'a-button',
   template: `
-    <button (click)="onClick.emit($event)">{{ text }}</button>
+    <button class="a-button" (click)="onClick.emit($event)">{{ text }}</button>
   `,
-  styles: [
-    `
-      button {
-        border: 1px solid #eee;
-        border-radius: 3px;
-        background-color: #ffffff;
-        cursor: pointer;
-        font-size: 15px;
-        padding: 3px 10px;
-        margin: 10px;
-      }
-    `,
-  ],
+  styleUrls: ['./button.scss']
 })
 export class Button {
   @Input()
