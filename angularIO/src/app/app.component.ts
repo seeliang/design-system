@@ -18,7 +18,8 @@ export class AppComponent {
     alt: {
       text: 'alt',
       type: 'is-alt',
-      html: 'a'
+      html: 'a',
+      link: '#2342'
     }
   }
 }

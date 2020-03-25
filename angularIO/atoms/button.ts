@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'a-button',
   template: `
   <ng-container [ngSwitch]="action?.html">
-    <a *ngSwitchCase="'a'" class="a-button" [ngClass]="action?.type" href="#34">{{ action?.text }}</a>
+    <a *ngSwitchCase="'a'" class="a-button" [ngClass]="action?.type" href="{{action?.link}}">{{ action?.text }}</a>
     <button *ngSwitchDefault class="a-button" [ngClass]="action?.type" (click)="onClick.emit($event)">{{ action?.text }}</button>
   </ng-container>
     `,
@@ -15,7 +15,8 @@ export class Button {
   action = {
     text:'',
     type: '',
-    html: ''
+    html: '',
+    link: ''
   }
 
   @Output()
