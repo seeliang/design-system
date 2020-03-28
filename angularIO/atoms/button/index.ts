@@ -2,12 +2,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'a-button',
-  template: `
-  <ng-container [ngSwitch]="action?.html">
-    <a *ngSwitchCase="'a'" class="a-button" [ngClass]="action?.type" href="{{action?.link}}">{{ action?.text }}</a>
-    <button *ngSwitchDefault class="a-button" [ngClass]="action?.type" (click)="onClick.emit($event)">{{ action?.text }}</button>
-  </ng-container>
-    `,
+  templateUrl: 'button.html',
   styleUrls: ['./button.scss']
 })
 export class Button {

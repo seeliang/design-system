@@ -1,0 +1,4 @@
+<ng-container [ngSwitch]="action?.html">
+  <a *ngSwitchCase="'a'" class="a-button" [ngClass]="action?.type" href="{{action?.link}}">{{ action?.text }}</a>
+  <button *ngSwitchDefault class="a-button" [ngClass]="action?.type" (click)="onClick.emit($event)">{{ action?.text }}</button>
+</ng-container>
