@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'm-search-form',
@@ -14,7 +14,7 @@ export class SearchForm {
       text:'search',
       action: (e) => {
         e.preventDefault(); 
-        alert(`seatch for: ` + this.value)
+        alert(`search for: ` + this.value)
       }
     },
   }
