@@ -4,12 +4,14 @@ import { AppComponent } from './app.component';
 import { SearchForm } from '../../molecules';
 import { Button } from '../../atoms';
 import { Grid } from '../../partial';
+import { Header } from '../../organisms';
 @NgModule({
   declarations: [
     AppComponent,
     Button,
     SearchForm,
-    Grid
+    Grid,
+    Header,
   ],
   imports: [
     BrowserModule,
