@@ -12,7 +12,10 @@ export class SearchForm {
   actions = {
     default: {
       text:'search',
-      action: (e) => alert(`seatch for: ` + this.value)
+      action: (e) => {
+        e.preventDefault(); 
+        alert(`seatch for: ` + this.value)
+      }
     },
   }
 
