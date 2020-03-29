@@ -1,0 +1,38 @@
+// general colors
+$c-black: #000;
+$c-white: #fff;
+$c-red: #d0021b;
+$c-green: #007a3d;
+$c-blue: #2980b9;
+$c-orange: #f39c12;
+
+// shades function
+@function tint($color, $percentage) {
+  @return mix($c-white, $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix($c-black, $color, $percentage);
+}
+
+// website colors
+
+// -- feature colors
+$c-main-1: $c-blue;
+$c-main-2: $c-orange;
+
+
+// -- shades of ink
+$c-print-0: $c-black;
+$c-print-1: tint($c-black, percentage(1 / 8));
+$c-print-2: tint($c-black, percentage(2 / 8));
+$c-print-3: tint($c-black, percentage(3 / 8));
+$c-print-4: tint($c-black, percentage(4 / 8));
+$c-print-5: tint($c-black, percentage(5 / 8));
+$c-print-6: tint($c-black, percentage(6 / 8));
+$c-print-7: tint($c-black, percentage(7 / 8));
+$c-print-8: $c-white;
+
+// -- UI/UX colors
+$c-error: $c-red;
+$c-correct: $c-green;

@@ -1,4 +1,6 @@
+@import '../../theme/';
+
 .m-search-form__input {
   min-height: 16px;
-  border: 1px solid indigo  
+  border: 1px solid $c-main-1;  
 }

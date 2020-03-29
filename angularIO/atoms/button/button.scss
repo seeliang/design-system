@@ -1,15 +1,17 @@
+@import '../../theme/';
+
 .a-button {
-    border: 1px solid #eee;
+    border: 1px solid $c-print-3;
     border-radius: 3px;
-    background-color: #ffffff;
+    background-color: $c-print-8;
     cursor: pointer;
     font-size: 15px;
     padding: 3px 10px;
-    color: #444;
+    color: $c-print-3;
     // a reset
     text-decoration: none;
 
     &.is-alt {
-      background-color: goldenrod;
+      background-color:$c-main-2;
     }
 }
